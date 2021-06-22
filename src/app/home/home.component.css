@@ -1,0 +1,221 @@
+.cover-page{
+    width: 100vw;
+    height: 100vh;
+    background-color: #05060a;
+    background-image:url("./../../assets/images/cover-image.jpg");
+    background-size: cover;
+    background-position: 30vw -10vh;
+    background-repeat: no-repeat;
+}
+
+.container{
+    color: white;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3vw 0 3vw;
+}
+
+.container h1{
+    font-size: 5.2rem;
+    margin-bottom: 50px;
+    text-shadow: grey 1px 1px;
+}
+
+.container p{
+    font-size: 1.4rem;
+    margin-bottom: 50px;
+}
+
+.contact{
+    width: 200px;
+    height: 70px;
+    background-color: var(--accent);
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.contact:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+
+.why-us{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    height: 100%;
+    padding: 200px 0 200px 0;
+}
+
+.why-us h1{
+    font-size: 3.7rem;
+    margin-bottom: 40px;
+}
+
+.why-us p{
+    font-size: 1.4rem;
+}
+
+
+.reviews{
+    background-color: var(--accent);
+    color: white;
+}
+.r{
+    padding: 100px 0 100px 0;
+    width: 90%;
+    margin: auto;
+    background-color: var(--accent);
+}
+.reviews h1{
+    text-align: center;
+    font-size: 3.7rem;
+    margin-bottom: 100px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left{
+    width: 50%;
+    margin-right: 5%;
+}
+
+.right{
+    width: 45%;
+}
+
+.star-rating{
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.rating-des{
+    font-weight: 100;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.right img{
+    height: 100%;
+    -webkit-border-radius:15%;		
+    -moz-border-radius:15%;
+    border-radius: 5px;
+    -webkit-box-shadow:0px -1px 25px rgba(0,0,0,0.5), 0px 1px 25px rgba(0,0,0,0.7);
+    -moz-box-shadow:0px -1px 25px rgba(0,0,0,0.5), 0px 1px 25px rgba(0,0,0,0.7);
+    box-shadow:0px -1px 25px rgba(0,0,0,0.5), 0px 1px 25px rgba(0,0,0,0.7);
+    width: 100%;
+}
+
+.meet-and-greet{
+    background-color: var(--accent);
+    height: 600px;
+    padding: 100px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.meet-and-greet h1{
+    font-size: 3.2rem;
+    color: white;
+}
+
+.meet-and-greet #s1{
+    color: rgb(112, 64, 64) !important;
+}
+
+#meet{
+    width: 200px;
+    margin-top: 50px;
+    height: 60px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color: white;
+    color:rgb(112, 64, 64);
+    outline: none;
+    border: none;
+    box-shadow: 0px 5px rgb(112, 64, 64);
+}
+
+#meet:hover{
+    cursor: pointer;
+    width: 250px;
+    transition: width .3s ease-in-out;
+}
+
+#meet:not(:hover){
+    width: 200px;
+    transition: width .3s ease-in-out;
+}
+
+@media screen and (max-width: 1200px){
+    .container{
+        width: 100%;
+    }
+
+    .why-us{
+        width: 100%;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    
+    .box{
+        flex-direction: column;
+    }
+
+    .left{
+        width: 100%;
+    }
+
+    .right{
+        width: 80%;
+        margin: 50px auto 0 auto;
+    }
+
+    .right img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 801px){
+    .container h1{
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+    }
+
+    .container p{
+        font-size: 1.3rem;
+        margin-bottom: 40px;
+    }
+
+    .contact{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 8.5%;
+    }
+
+    .reviews h1,
+    .why-us h1,
+    .meet-and-greet h1{
+        font-size: 2.8rem;
+    }
+
+    .why-us p{
+        font-size: 1.3rem;
+    }    
+}

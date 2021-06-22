@@ -1,0 +1,159 @@
+nav{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw 0 3vw;
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    z-index: 100;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    width: 45%;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+ul li:hover{
+    cursor: pointer;
+}
+
+ul li{
+    outline: none;
+}
+
+#contactUs{
+    background-color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 135px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+#contactUs:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    outline: none;
+    transform: translateY(10px);
+}
+
+.large{
+    font-size: 1.3rem;
+}
+
+.logo img{
+    width: 50%;
+    height: 100%;
+}
+.logo p{
+    font-size: .9rem;
+    outline: none;
+    color: black;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.link-active{
+    border-bottom: solid var(--accent) 1px;
+}
+
+.burger-menu{
+    display: none;
+}
+
+.line1,
+.line2{
+    border: solid var(--accent) 1px;
+    width: 40px;
+    margin-bottom: 8px;
+}
+
+.active{
+    display: block !important;
+    animation: fade-up .4s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.menu{
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: var(--accent);
+    z-index: 99;
+}
+
+.burger-animation1{
+    transform: translate(0px, 10px) rotate(45deg);
+    transition: transform .3s ease-in-out;
+}
+
+.burger-animation2{
+    transform: rotate(-45deg);
+    transition: transform .3s ease-in-out;
+}
+
+.line1:not(.burger-animation1){
+    transform: rotate(0deg);
+    transition: transform .3s ease-in-out;
+}
+
+.line2:not(.burger-animation2){
+    transform: rotate(0deg);
+    transition: transform .3s ease-in-out;
+}
+
+.links h1{
+    outline: none;
+}
+
+.links h1:hover{
+    cursor: pointer;
+}
+@keyframes fade-up {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.links h1{
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px){
+    ul{
+        display: none;
+    }
+    .burger-menu{
+        display: block;
+    }
+}

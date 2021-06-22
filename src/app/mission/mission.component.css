@@ -1,0 +1,52 @@
+.our-mission{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    height: 700px;
+    padding-top: 250px;
+    margin-bottom: 170px;
+}
+
+.left{
+    width: 100%;
+    font-size: 2.7rem;
+}
+
+.right{
+    width: 90%;
+}
+
+.right p{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 1200px){
+    .our-mission{
+        flex-direction: column;
+        height: 100%;
+        width: 85%;
+        margin: auto;
+        padding-top: 150px;
+    }
+
+    .left{
+        margin-bottom: 40px;
+    }
+
+    .right{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 801px){
+    .our-mission h1{
+        font-size: 2.8rem;
+        text-align: center;
+    }
+
+    .our-mission p{
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,28 @@
+<nav>
+    <div class="logo" routerLink="/">
+        <img src="./../../../assets/icons/happytailslogo.png" alt="logo">
+        <p><span class="large">Happy Tails</span><br> Loving Care</p>
+    </div>
+    <ul>
+        <li routerLink="/mission" routerLinkActive="link-active">My Mission</li>
+        <li routerLink="/team" routerLinkActive="link-active">About Me</li>
+        <li routerLink="/services" routerLinkActive="link-active">Services</li>
+        <!-- <li routerLink="" routerLinkActive="link-active">Blog</li> -->
+        <li routerLink="/contact" id="contactUs">Contact Me</li>
+    </ul>
+
+    <div class="burger-menu" (click)="renderMenu()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+    </div>
+</nav>
+
+<div class="menu">
+    <div class="links">
+        <h1 routerLink="/" (click)="newPage()">Home</h1>
+        <h1 routerLink="/mission" (click)="newPage()">My Mission</h1>
+        <h1 routerLink="/team" (click)="newPage()">About Me</h1>
+        <h1 routerLink="/services" (click)="newPage()">Services</h1>
+        <h1 routerLink="/contact" (click)="newPage()">Contact Me</h1>
+    </div>
+</div>

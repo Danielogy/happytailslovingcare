@@ -1,0 +1,136 @@
+.services{
+    padding-top: 300px;
+    margin-bottom: 200px;
+}
+
+.header{
+    font-size: 3.2rem;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.des{
+    text-align: center;
+    width: 400px;
+}
+
+.des h1{
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.des p{
+    font-size: 1.3rem;
+}
+
+.pricing{
+    width: 40%;
+    margin: auto;
+}
+
+.pricing h1{
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.pricing p{
+    font-size: 1.3rem;
+    padding: 50px 0 50px 0;
+    border-bottom: solid var(--accent) 1px;
+}
+
+strong{
+    font-size: 1.5rem;
+}
+
+li{
+    list-style: none;
+    padding-left: 40px;
+}
+
+.cover{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+}
+
+.cover::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("./../../assets/images/cover-image2.jpg");
+    background-position: center;
+    background-size: cover;
+    filter: contrast(80%);
+}
+
+.cover h1,
+.cover p {
+  z-index: 1;
+  color: white;
+}
+
+.cover h1{
+    font-size: 3.2rem;
+    text-shadow: black 2px 2px;
+}
+
+.cover p{
+    font-size: 1.7rem;
+    text-shadow: black 2px 2px;
+}
+
+button{
+    margin-top: 50px;
+    width: 220px;
+    height: 70px;
+    background-color: var(--accent);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    z-index: 1;
+    color: white;
+    font-size: 1.7rem;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+
+@media screen and (max-width: 1200px){
+    .services{
+        padding-top: 150px;
+    }
+    .des{
+        margin-bottom: 100px;
+    }
+
+    .cover{
+        justify-content: flex-end;
+        padding-bottom: 25%;
+    }
+
+    .pricing{
+        width: 90%;
+    }
+}
