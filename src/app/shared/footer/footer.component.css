@@ -17,15 +17,12 @@ footer{
     margin-bottom: 5px;
 }
 
-.links ul{
+.certifications{
+    margin-top: 50px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 50%;
-    justify-content: space-between;
-    color: var(--accent);
-    text-decoration: underline;
-    list-style-type: none;
-    height: 300px;
 }
 
 @media screen and (max-width: 1200px){

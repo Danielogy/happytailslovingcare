@@ -17,4 +17,8 @@ export class ServicesComponent implements OnInit {
     logop.style.cssText = "color: black;";
   }
 
+  scrollTo(): void {
+    window.scrollTo(0, 0);
+  }
+
 }

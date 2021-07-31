@@ -1,6 +1,6 @@
 <section class="services">
     <h1 class="header">Services and Pricing</h1>
-    <div class="services-container" data-aos="fade-in" data-aos-duration="2000">
+    <!-- <div class="services-container" data-aos="fade-in" data-aos-duration="2000">
         <div class="des">
             <h1>Happy</h1>
             <p>
@@ -28,13 +28,7 @@
                 maiores culpa?
             </p>
         </div>
-    </div>
-</section>
-
-<section class="cover" data-aos="fade-in" data-aos-duration="2000">
-    <h1>Ready to learn more?</h1>
-    <p>Check out our pricing info below!</p>
-    <button routerLink="/contact">Contact Me</button>
+    </div> -->
 </section>
 
 <section class="pricing">
@@ -69,6 +63,7 @@
         <strong>Rates:</strong><br>
             <li>$20—30 minute walk</li>
             <li>$35—1 hour walk</li>
+            <li>$10 additional for a second dog</li>
         
     </p>
     
@@ -101,14 +96,16 @@
     <p>
         <strong>Boarding (Cage Free)</strong><br><br>
         Sleepover with your pet in our home. Up to 4 walks are included. Space is limited to pets of one household only.<br>
-        <strong>Rate:</strong> $80 per night
+        <strong>Rates:</strong> 
+        <li>$80 per night</li>
+        <li>$40 additional for a second dog</li>
     </p>
     
     <p>
         <strong>Holiday Support</strong><br><br>
         Same rates apply for services plus a $5 premium per visit or $10 per night on New Year's Day, Easter, Mother's Day,
         Memorial Weekend (Friday, Saturday & Sunday), Independence Day, Labor Day Weekend (Friday, Saturday & Sunday),
-        Halloween, Thanksgiving, Black Friday, Christmas Eve, Christmas Day, New Year's Eve.
+        Thanksgiving, Christmas Eve, Christmas Day, New Year's Eve.
     </p>
     
     <p>
@@ -121,6 +118,12 @@
         <li>House check for security</li>
         <li>Text updates with photos/videos</li>  
     </p>
+</section>
+
+<section class="cover" data-aos="fade-in" data-aos-duration="2000">
+    <h1>Want to learn more?</h1>
+    <p>Let's chat!</p>
+    <button (click)="scrollTo()"routerLink="/contact">Contact Me</button>
 </section>
 
 

@@ -34,7 +34,7 @@
     width: 200px;
     height: 70px;
     background-color: var(--accent);
-    color: white;
+    color: black;
     font-size: 1.5rem;
     border: none;
     outline: none;
@@ -67,7 +67,7 @@
 .reviews{
     width: 100%;
     background-color: var(--accent);
-    color: white;
+    color: black;
 }
 
 .r{
@@ -106,6 +106,7 @@
     font-weight: 100;
     font-size: 1.3rem;
     font-style: italic;
+    padding-right: 40px;
 }
 
 .right img{
@@ -132,11 +133,11 @@
 
 .meet-and-greet h1{
     font-size: 3.2rem;
-    color: white;
+    color: black;
 }
 
 .meet-and-greet #s1{
-    color: rgb(112, 64, 64) !important;
+    color: salmon !important;
 }
 
 #meet{
@@ -145,11 +146,10 @@
     height: 60px;
     font-size: 1.2rem;
     border-radius: 5px;
-    background-color: white;
-    color:rgb(112, 64, 64);
+    background-color: salmon;
+    color:black;
     outline: none;
     border: none;
-    box-shadow: 0px 5px rgb(112, 64, 64);
 }
 
 #meet:hover{
@@ -215,6 +215,10 @@
     .why-us h1,
     .meet-and-greet h1{
         font-size: 2.8rem;
+    }
+
+    .rating-des{
+        padding-right: 0px;
     }
 
     .why-us p{

@@ -29,6 +29,7 @@ ul li{
 #contactUs{
     background-color: var(--accent);
     display: flex;
+    color: black;
     align-items: center;
     justify-content: center;
     width: 135px;
@@ -69,7 +70,7 @@ ul li{
 }
 
 .link-active{
-    border-bottom: solid var(--accent) 1px;
+    border-bottom: solid black 1px;
 }
 
 .burger-menu{
@@ -78,7 +79,7 @@ ul li{
 
 .line1,
 .line2{
-    border: solid var(--accent) 1px;
+    border: solid salmon 1px;
     width: 40px;
     margin-bottom: 8px;
 }

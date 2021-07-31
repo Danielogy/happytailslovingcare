@@ -89,7 +89,7 @@ button[type="submit"]{
     width: 150px;
     font-size: 1rem;
     color: white;
-    background-color: var(--accent);
+    background-color: salmon;
     border: none;
     border-radius: 5px;
 }

@@ -3,7 +3,7 @@
     <div class="team-container">
         <div class="team-member" data-aos="fade-up" data-aos-duration="2000">
             <div class="member-image">
-                <img src="./assets/images/cover-image.jpg" alt="image">
+                <img src="./assets/images/pets/gallery2/louie.jpeg" alt="image">
             </div>
             <div class="member-name">
                 Nicole Welna
@@ -11,29 +11,28 @@
         </div>
         <div class="member-description">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Sit voluptas explicabo sint. Totam at quas, quasi neque iste 
-                consectetur provident, voluptas tempora fugit, repellendus nisi 
-                alias sit fugiat sed laboriosam!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sit voluptas explicabo sint. Totam at quas, quasi neque iste
-                consectetur provident, voluptas tempora fugit, repellendus nisi
-                alias sit fugiat sed laboriosam!
-            
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sit voluptas explicabo sint. Totam at quas, quasi neque iste
-                consectetur provident, voluptas tempora fugit, repellendus nisi
-                alias sit fugiat sed laboriosam!<br><br>
-            
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sit voluptas explicabo sint. Totam at quas, quasi neque iste
-                consectetur provident, voluptas tempora fugit, repellendus nisi
-                alias sit fugiat sed laboriosam!<br><br>
-
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sit voluptas explicabo sint. Totam at quas, quasi neque iste
-                consectetur provident, voluptas tempora fugit, repellendus nisi
-                alias sit fugiat sed laboriosam!<br><br>
+                My name is <i>Nicole Welna and I am the owner and primary care-taker</i> at Happy Tails Loving Care. I live with my dog,
+                Cassie, my two rats, Willow and Hazel, and my fish, Swim Shady. I've loved animals as long as I can remember, and
+                nothing gives me more satisfaction than taking care of animals. I love all critters: big and small, all shapes and
+                sizes. I grew up with dogs, cats, rabbits, fish and rats over the years. <em>I care for all animals.</em>
+            </p>
+            <p>
+                Although, I've only been an independent professional pet sitter and dog walker for 2+ years, I’ve worked with animals in
+                volunteer and paid positions and have had pets my entire life. I worked at a doggy day care over the years where I
+                handled groups of 20+ dogs as well as handled fearful dogs on a one-on-one basis. I also volunteered with cats and dogs
+                for over 10 years.
+            </p>
+            <p>
+                With Happy Tails, <i>I get to wake up every day and do something I am extremely passionate about: taking care of animals
+                while giving you peace of mind.</i> I am insured and bonded through Pet Sitter Associates and Pet CPR and First Aid
+                certified. In addition to this, I’ve taken animal science and behavior classes at Rutgers University while pursuing my
+                bachelor’s degree in political science.
+            </p>
+            <p>
+                I’m an active walker and sitter. I want to become a part of your family and be involved. I want to be there for you and
+                your pets. I want you to feel like you have someone to depend on, and that you're not alone in giving your babies the
+                amazing lives that they deserve. If given the opportunity, I will do my absolute best to be the best sitter you and your
+                pets have ever had.
             </p>
         </div>
     </div>
@@ -42,89 +41,26 @@
 <section class="family">
     <h1>Meet our family</h1>
     <div class="card-container">
-        <div class="card" data-aos="fade-up" data-aos-duration="1000">
+        <div class="card" data-aos="fade-up" data-aos-duration="1000" *ngFor="let pet of pets | paginate:{itemsPerPage: 6, currentPage: p}; let i = index;">
             <div class="card-image">
-                <img src="./assets/images/pets/blueberry.jpeg" alt="image">
+                <img src="./assets/images/pets/{{ pet.image }}" alt="image">
             </div>
             <div class="card-name">
-                <h2>Blueberry</h2>
+                <h2>{{ pet.name }}</h2>
             </div>
             <div class="card-description">
                 <p>
-                    Calm and wise, Pedro is the perfect companion. Responds well to commands and has
-                    a gorgeous, lustrous coat.
-                </p>
-            </div>
-        </div>
-        <div class="card" data-aos="fade-up" data-aos-duration="1000">
-            <div class="card-image">
-                <img src="./assets/images/pets/cassie.jpeg" alt="image">
-            </div>
-            <div class="card-name">
-                <h2>Cassie</h2>
-            </div>
-            <div class="card-description">
-                <p>
-                    Calm and wise, Pedro is the perfect companion. Responds well to commands and has
-                    a gorgeous, lustrous coat.
-                </p>
-            </div>
-        </div>
-        <div class="card" data-aos="fade-up" data-aos-duration="1000">
-            <div class="card-image">
-                <img src="./assets/images/pets/daisy.jpeg" alt="image">
-            </div>
-            <div class="card-name">
-                <h2>Daisy</h2>
-            </div>
-            <div class="card-description">
-                <p>
-                    Calm and wise, Pedro is the perfect companion. Responds well to commands and has
-                    a gorgeous, lustrous coat.
-                </p>
-            </div>
-        </div>
-        <div class="card" data-aos="fade-up" data-aos-duration="1000">
-            <div class="card-image">
-                <img src="./assets/images/pets/hoot.jpeg" alt="image">
-            </div>
-            <div class="card-name">
-                <h2>Hoot</h2>
-            </div>
-            <div class="card-description">
-                <p>
-                    Calm and wise, Pedro is the perfect companion. Responds well to commands and has
-                    a gorgeous, lustrous coat.
-                </p>
-            </div>
-        </div>
-        <div class="card" data-aos="fade-up" data-aos-duration="1000">
-            <div class="card-image">
-                <img src="./assets/images/pets/mila-emma.jpeg" alt="image">
-            </div>
-            <div class="card-name">
-                <h2>Mila (left) Emma (Right)</h2>
-            </div>
-            <div class="card-description">
-                <p>
-                    Calm and wise, Pedro is the perfect companion. Responds well to commands and has
-                    a gorgeous, lustrous coat.
-                </p>
-            </div>
-        </div>
-        <div class="card" data-aos="fade-up" data-aos-duration="1000">
-            <div class="card-image">
-                <img src="./assets/images/pets/Szafirek.jpeg" alt="image">
-            </div>
-            <div class="card-name">
-                <h2>Szafirek</h2>
-            </div>
-            <div class="card-description">
-                <p>
-                    Calm and wise, Pedro is the perfect companion. Responds well to commands and has
-                    a gorgeous, lustrous coat.
+                    {{ pet.des }}
                 </p>
             </div>
         </div>
     </div>
+
+    <pagination-controls class="my-pagination" 
+                        (pageChange)="p = $event" 
+                        previousLabel="" 
+                        nextLabel=""
+                        [responsive]="true"
+                        (click)="scrollTo()">
+    </pagination-controls>
 </section>

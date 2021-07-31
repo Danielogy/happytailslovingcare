@@ -38,8 +38,12 @@
     font-size: 1.5rem;
 }
 
+.member-description p{
+    margin-bottom: 20px;
+}
+
 .family{
-    color: white;
+    color: black;
     padding: 100px 3vw 100px 3vw;
     background-color: var(--accent);
 }
@@ -126,3 +130,29 @@
         font-size: 1.2rem;
     }
 }
+
+/* Pagination Component */
+.my-pagination /deep/ .ngx-pagination{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    font-family: Regular;
+}
+
+.my-pagination /deep/ .ngx-pagination .current{
+    background: none;
+    color: salmon;
+}
+
+.my-pagination /deep/ .ngx-pagination .pagination-previous a::before,
+.my-pagination /deep/ .ngx-pagination .pagination-previous.disabled::before { 
+  content: '←';
+  display: inline-block;
+  margin-right: 0.5rem; }
+
+.my-pagination /deep/ .ngx-pagination .pagination-next a::after,
+.my-pagination /deep/ .ngx-pagination .pagination-next.disabled::after {
+  content: '→';
+  display: inline-block;
+  margin-left: 0.5rem; }
