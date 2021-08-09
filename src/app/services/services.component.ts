@@ -15,6 +15,12 @@ export class ServicesComponent implements OnInit {
 
     const logop = document.querySelector('.logo p') as HTMLElement;
     logop.style.cssText = "color: black;";
+
+    const line1 = document.querySelector('.line1') as HTMLElement;
+    const line2 = document.querySelector('.line2') as HTMLElement;
+
+    line1.style.cssText = "border: solid black 1px;";
+    line2.style.cssText = "border: solid black 1px;";
   }
 
   scrollTo(): void {

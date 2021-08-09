@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-top-nav',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopNavComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { 
+  }
 
   ngOnInit(): void {
+    const line1 = document.querySelector('.line1') as HTMLElement;
+    const line2 = document.querySelector('.line2') as HTMLElement;
+    
+    line1.style.cssText = "border: solid white 1px;";
+    line2.style.cssText = "border: solid white 1px;";
   }
 
   renderMenu() : void{
@@ -20,7 +27,7 @@ export class TopNavComponent implements OnInit {
     const line2 = document.querySelector('.line2');
     line2?.classList.toggle('burger-animation2');
 
-    const logo = document.querySelector('.logo h1') as HTMLElement;
+    const logo = document.querySelector('.logo p') as HTMLElement;
     logo.style.cssText = "color: white;"
   }
 
@@ -33,9 +40,5 @@ export class TopNavComponent implements OnInit {
     line1?.classList.remove('burger-animation1');
     const line2 = document.querySelector('.line2');
     line2?.classList.remove('burger-animation2');
-
-    const logo = document.querySelector('.logo h1') as HTMLElement;
-    logo.style.cssText = "color: var(--accent);"
-
   }
 }

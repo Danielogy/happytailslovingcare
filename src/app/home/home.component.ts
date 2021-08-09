@@ -19,6 +19,12 @@ export class HomeComponent implements OnInit {
 
     const logop = document.querySelector('.logo p') as HTMLElement;
     logop.style.cssText = "color: white;"
+
+    const line1 = document.querySelector('.line1') as HTMLElement;
+    const line2 = document.querySelector('.line2') as HTMLElement;
+
+    line1.style.cssText = "border: solid white 1px;";
+    line2.style.cssText = "border: solid white 1px;";
   }
 
   scrollTo() : void{

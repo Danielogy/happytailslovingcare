@@ -45,7 +45,7 @@
 .family{
     color: black;
     padding: 100px 3vw 100px 3vw;
-    background-color: var(--accent);
+    background-color: #f1fefb;
 }
 
 .family h1{

@@ -1,9 +1,10 @@
 .our-mission{
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     width: 80%;
     margin: auto;
-    height: 700px;
+    height: 100%;
     padding-top: 250px;
     margin-bottom: 170px;
 }
@@ -11,6 +12,11 @@
 .left{
     width: 100%;
     font-size: 2.7rem;
+}
+
+.left img{
+    margin-top: 50px;
+    width: 80%;
 }
 
 .right{
@@ -33,6 +39,10 @@
 
     .left{
         margin-bottom: 40px;
+    }
+
+    .left img{
+        width: 100%;
     }
 
     .right{

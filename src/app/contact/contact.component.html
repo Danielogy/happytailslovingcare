@@ -17,7 +17,7 @@
         <div class="des">
             <h3>Office Hours</h3>
             <p>
-                Monday to Sunday 8:00AM - 8:00PM
+                Monday to Sunday 8:00AM - 6:00PM
             </p>
             <h3>Service Hours</h3>
             <p>
@@ -33,81 +33,80 @@
                 Bayonne, NJ
             </p>
             <p>
-                Staten Island, NJ 
+                Staten Island, NY
             </p>
             <p>
-                If you do not see your city listed, please call or contact directly
-                to enquire about your area.
+                If you do not see your city listed, please call to enquire about your area.
             </p>
         </div>
     </div>
     <div class="right">
-        <form action="">
+        <form (submit)="sendEmail($event)">
             <label for="">Name*</label>
             <div class="double-input" style="margin-top: 8px;">
                 <div class="single-input mirror">
                     <label for="fname" style="margin-top: 5px; font-size: .8rem;">First Name</label>
-                    <input type="text">
+                    <input type="text" name="from_name" required>
                 </div>
                 <div class="single-input mirror">
                     <label for="lname" style="margin-top: 5px; font-size: .8rem;">Last Name</label>
-                    <input type="text">
+                    <input type="text" name="from_name_last" required>
                 </div>
             </div>
 
             <div class="single-input">
                 <label for="email">Email*</label>
-                <input type="text">
+                <input type="text" name="email" required>
             </div>
 
             <div class="single-input">
                 <label for="phone">Phone Number</label>
-                <input type="text" id ="phoneNum">
+                <input type="text" id ="phoneNum" name="phone_number">
             </div>
 
             <div class="single-input">
                 <label for="preferred-contact">Preferred Method of Contact</label>
                 <div class="box">
-                    <input type="radio" name="preferred-contact">
-                    <label for="preferred-contact">Text</label>
+                    <input type="radio" name="preferred-contact" value="Text">
+                    <label for="preferred-contact">Text</label> 
                 </div>
                 <div class="box">
-                    <input type="radio" name="preferred-contact">
+                    <input type="radio" name="preferred-contact" value="Call">
                     <label for="preferred-contact">Call</label>
                 </div>
                 <div class="box">
-                    <input type="radio" name="preferred-contact">
+                    <input type="radio" name="preferred-contact" value="Email">
                     <label for="preferred-contact">Email</label>
                 </div>
             </div>
             <div class="single-input">
                 <label for="subject">I am interested in help with...</label>
                 <div class="box">
-                    <input type="checkbox" name="meetandgreet">
+                    <input type="checkbox" name="meetandgreet" value="Meet and Greet">
                     <label for="meetandgreet">A FREE Meet and Greet</label>
                 </div>
                 <div class="box">
-                    <input type="checkbox" name="drop-in">
+                    <input type="checkbox" name="drop-in" value="Drop-in">
                     <label for="drop-in">Drop-in Home Visits</label>
                 </div>
                 <div class="box">
-                    <input type="checkbox" name="30-min">
+                    <input type="checkbox" name="30-min" value="30-min Walk">
                     <label for="30-min">30 Minute Walk</label>
                 </div>
                 <div class="box">
-                    <input type="checkbox" name="60-min">
+                    <input type="checkbox" name="60-min" value="60-min Walk">
                     <label for="60-min">60 Minute Walk</label>
                 </div>
                 <div class="box">
-                    <input type="checkbox" name="pet-transport">
-                    <label for="pet-transport">Pet Transportation</label>
+                    <input type="checkbox" name="boarding" value="Boarding">
+                    <label for="boarding">Boarding</label>
                 </div>
                 <div class="box">
-                    <input type="checkbox" name="overnight">
+                    <input type="checkbox" name="overnight" value="Overnight">
                     <label for="overnight">Overnight Care</label>
                 </div>
                 <div class="box">
-                    <input type="checkbox" name="other">
+                    <input type="checkbox" name="other" value="Other">
                     <label for="other">Other (add details to Additional Message box below)</label>
                 </div>
             </div>
@@ -120,3 +119,6 @@
         </form>
     </div>
 </section>
+
+
+<!--  -->

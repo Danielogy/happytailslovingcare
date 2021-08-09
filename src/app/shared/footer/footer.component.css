@@ -18,10 +18,8 @@ footer{
 }
 
 .certifications{
-    margin-top: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -36,5 +34,10 @@ footer{
 
     .links ul{
         margin-top: 100px;
+    }
+
+    .certifications{
+        margin-top: 40px;
+        justify-content: center;
     }
 }

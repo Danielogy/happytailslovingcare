@@ -5,7 +5,7 @@
 }
 
 :root{
-    --primary: rgb(5,5,5);
+    --primary: #050505;
     --secondary: white;
     /* --accent: rgb(199,146,136); */
     --accent: #e1fefb;
